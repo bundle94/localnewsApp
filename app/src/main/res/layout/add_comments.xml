@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutAddComments"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple_200"
+    android:orientation="vertical"
+    app:behavior_peekHeight="50dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <TextView
+        android:id="@+id/textAddComment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="ADD COMMENTS"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutNoteColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:id="@+id/comment"
+            android:background="@drawable/background_search"
+            android:hint="Comment..."
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:layout_marginLeft="10dp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:textColorHint="@color/black"
+            android:textSize="14dp"/>
+        <Button
+            android:id="@+id/submitComment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:includeFontPadding="false"
+            android:text="SUBMIT"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LocalNewsApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="show_password">Show password</string>
+    <string name="hide_password">Hide password</string>
+    <string name="activity_create_note_input_note_title_hint">News Title</string>
+    <string name="activity_create_note_input_note_subtitle_hint">news_subtitle (Optional)</string>
+    <string name="activity_create_note_input_note_text_hint">Type news here..</string>
+    <string name="layout_add_url_text_add_text">ADD</string>>
+    <string name="layout_miscellaneous_text_miscellaneous_text">Add Image</string>
+    <string name="layout_miscellaneous_text_add_image_text">Pick Image</string>
+    <string name="layout_miscellaneous_text_capture_image_text">Capture Image</string>
+    <string name="layout_miscellaneous_text_delete_note_text">Delete Note</string>
+</resources>

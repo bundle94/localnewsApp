@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreferenceCompat
+        app:key="anonymous"
+        app:title="Hide My Identity"
+        app:summary="Map your comments to our anonymous user"
+        android:icon="@drawable/ic_baseline_person_off_24" />
+
+    <SwitchPreferenceCompat
+        android:key="night_mode"
+        android:title="Dark Mode"
+        android:defaultValue="false"
+        android:summaryOn="Dark mode is enabled"
+        android:summaryOff="Dark mode is disabled"
+        android:icon="@drawable/ic_baseline_light_mode_24"/>
+
+    <Preference
+        app:key="logout"
+        app:title="Logout"
+        app:summary="Signout from your account"
+        android:icon="@drawable/ic_baseline_logout_24" />
+</PreferenceScreen>
