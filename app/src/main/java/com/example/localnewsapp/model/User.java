@@ -1,14 +1,14 @@
 package com.example.localnewsapp.model;
 
 public class User {
-    private String full_name, email, password;
+    private String fullName, email, password;
 
-    public String getFull_name() {
-        return full_name;
+    public String getFullName() {
+        return fullName;
     }
 
-    public void setFull_name(String full_name) {
-        this.full_name = full_name;
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 
     public String getEmail() {

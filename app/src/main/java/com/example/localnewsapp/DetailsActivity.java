@@ -128,8 +128,13 @@ public class DetailsActivity extends AppCompatActivity {
         name_tv.setText(name);
         description_tv.setText(description);
 
-        LocalDateTime dateTime = LocalDateTime.parse(postedDate, DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSSSSSS"));
-        String output = dateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"));
+        //LocalDateTime dateTime = LocalDateTime.parse(postedDate, DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSSSSSS"));
+        // Parse the string to LocalDateTime
+        LocalDateTime dateTime = LocalDateTime.parse(postedDate, DateTimeFormatter.ISO_LOCAL_DATE_TIME);
+
+        // Truncate to seconds precision
+        LocalDateTime truncatedDateTime = dateTime.withNano(0);
+        String output = truncatedDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"));
         posted_tv.setText("Posted Date: "+ output);
 
         commentArrayList = new ArrayList<>();

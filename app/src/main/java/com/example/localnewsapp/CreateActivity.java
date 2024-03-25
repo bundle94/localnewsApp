@@ -87,7 +87,7 @@ public class CreateActivity extends AppCompatActivity {
 
         //Building request
         User user = new User();
-        user.setFull_name(name.getText().toString());
+        user.setFullName(name.getText().toString());
         user.setEmail(email.getText().toString());
         user.setPassword(password.getText().toString());
 
